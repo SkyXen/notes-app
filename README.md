@@ -46,6 +46,8 @@ API endpoint for deleting a Note by it's id:
 
    DELETE: http://localhost:5000/notes/:id
 
+*USE Ctrl+C to stop the server
+
 ********************************************************
 For building and running Docker containers:
 
@@ -80,3 +82,5 @@ API endpoint for updating a Note by it's id:
 API endpoint for deleting a Note by it's id:
 
    DELETE: http://localhost:5001/notes/:id
+
+*USE Ctrl+C to stop the server
