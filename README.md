@@ -60,3 +60,23 @@ sudo docker compose up
 The database conatiner along with API container will be build and started.
 
 The server starts running and can be accessed through http://localhost:5001 (as in docker container PORT 5000 is mapped to 5001) and get connected to mongoDB database.
+
+API endpoint for creating Notes:
+
+   POST: http://localhost:5001/notes/create
+
+API endpoint for retrieving all Notes:
+
+   GET: http://localhost:5001/notes
+
+API endpoint for retrieving a Note by it's id:
+
+   GET: http://localhost:5001/notes/:id
+
+API endpoint for updating a Note by it's id:
+
+   PUT: http://localhost:5001/notes/:id
+
+API endpoint for deleting a Note by it's id:
+
+   DELETE: http://localhost:5001/notes/:id
