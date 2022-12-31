@@ -83,4 +83,10 @@ API endpoint for deleting a Note by it's id:
 
    DELETE: http://localhost:5001/notes/:id
 
-*USE Ctrl+C to stop the server
+*USE Ctrl+C to stop and exit the server 
+
+Run the below commands to exit and delete the built containers:
+
+```bash
+sudo docker compose down
+```
