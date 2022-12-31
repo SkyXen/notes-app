@@ -45,3 +45,15 @@ API endpoint for updating a Note by it's id:
 API endpoint for deleting a Note by it's id:
 
    DELETE: http://localhost:5000/notes/:id
+
+********************************************************
+For building and running the Docker container:
+
+
+Run this command in the terminal:
+
+```bash
+docker compose up
+```
+
+The server will start running and can be accessed through http://localhost:5001 (as in docker container PORT 5000 is mapped to 5001) and get connected to mongoDB database.
