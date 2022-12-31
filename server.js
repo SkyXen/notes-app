@@ -29,7 +29,7 @@ app.use(express.json()); // to accept json data
 
 /** SUCCESS MESSAGE IF SERVER IS RUNNING */
 app.get("/", (req, res) => {
-  res.send("API is running...");
+  res.send("API is up and running...");
 })
 
 /** ROUTES FOR MODIFYING NOTES */
