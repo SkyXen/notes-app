@@ -90,3 +90,7 @@ Run the below commands to exit and delete the built containers:
 ```bash
 sudo docker compose down
 ```
+
+NOTE: I have exposed my .env file in github just for the evaluation purpose of Flipr so that nothing goes wrong while cloning and running my REST API and it runs as it is. 
+
+This file contains secret credentials and should never be exposed to the public github repositories.
