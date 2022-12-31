@@ -16,6 +16,10 @@ Clone this repository in your local machine.
 
 (Make sure your machine have node and npm pre-installed before cloning this repository).
 
+REPLACE THE MONGO_URI in .env and docker-compose.yml files by your own MONGO_URI.
+
+NOW YOU ARE GOOD TO GO.
+
 ## Usage
 
 Running the server on localhost on port 5000.
