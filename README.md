@@ -18,12 +18,13 @@ Clone this repository in your local machine.
 
 ## Usage
 
-Running the server on localhost.
+Running the server on localhost on port 5000.
 
 ```bash
 npm run dev
 ```
 
+The server will start running and can be accessed through http://localhost:5000
 ## Contributing
 
 Pull requests are welcome. For major changes, please open an issue first
