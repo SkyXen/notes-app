@@ -16,6 +16,10 @@ Clone this repository in your local machine.
 
 (Make sure your machine have node and npm pre-installed before cloning this repository).
 
+REPLACE THE MONGO_URI in .env and docker-compose.yml files by your own MONGO_URI.
+
+NOW YOU ARE GOOD TO GO.
+
 ## Usage
 
 Running the server on localhost on port 5000.
@@ -94,3 +98,5 @@ sudo docker compose down
 NOTE: I have exposed my .env file in github just for the evaluation purpose of Flipr so that nothing goes wrong while cloning and running my REST API and it runs as it is. 
 
 This file contains secret credentials and should never be exposed to the public github repositories.
+
+MADE BY AKASH KUMAR
