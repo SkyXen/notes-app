@@ -1,12 +1,13 @@
 # notes-app
 
 This notes-app is a REST API to :
+
      -> Create Notes.
 
      -> Retrieve all existing notes and also notes by  their respective id's.
 
      -> Update existing notes by their id's.
-     
+
      -> Delete existing notes by their id's.
 
 ## Setting up the environment
