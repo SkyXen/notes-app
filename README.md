@@ -8,7 +8,8 @@ This notes-app is a REST API to :
 
 ## Setting up the environment
 
-Clone this repository in your local machine(Make sure your machine have node and npm pre-installed before cloning this repository).
+Clone this repository in your local machine
+(Make sure your machine have node and npm pre-installed before cloning this repository).
 
 ## Usage
 
