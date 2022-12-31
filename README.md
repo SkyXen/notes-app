@@ -2,13 +2,17 @@
 
 This notes-app is a REST API to :
      -> Create Notes.
+
      -> Retrieve all existing notes and also notes by  their respective id's.
+
      -> Update existing notes by their id's.
+     
      -> Delete existing notes by their id's.
 
 ## Setting up the environment
 
-Clone this repository in your local machine
+Clone this repository in your local machine.
+
 (Make sure your machine have node and npm pre-installed before cloning this repository).
 
 ## Usage
