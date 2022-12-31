@@ -24,14 +24,24 @@ Running the server on localhost on port 5000.
 npm run dev
 ```
 
-The server will start running and can be accessed through http://localhost:5000
-## Contributing
+The server will start running and can be accessed through http://localhost:5000 and get connected to mongoDB database.
 
-Pull requests are welcome. For major changes, please open an issue first
-to discuss what you would like to change.
+API endpoint for creating Notes:
 
-Please make sure to update tests as appropriate.
+   POST: http://localhost:5000/notes/create
 
-## License
+API endpoint for retrieving all Notes:
 
-[MIT](https://choosealicense.com/licenses/mit/)
+   GET: http://localhost:5000/notes
+
+API endpoint for retrieving a Note by it's id:
+
+   GET: http://localhost:5000/notes/:id
+
+API endpoint for updating a Note by it's id:
+
+   PUT: http://localhost:5000/notes/:id
+
+API endpoint for deleting a Note by it's id:
+
+   DELETE: http://localhost:5000/notes/:id
