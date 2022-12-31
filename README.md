@@ -18,17 +18,10 @@ Clone this repository in your local machine.
 
 ## Usage
 
-```python
-import foobar
+Running the server on localhost.
 
-# returns 'words'
-foobar.pluralize('word')
-
-# returns 'geese'
-foobar.pluralize('goose')
-
-# returns 'phenomenon'
-foobar.singularize('phenomena')
+```bash
+npm run dev
 ```
 
 ## Contributing
