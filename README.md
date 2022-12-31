@@ -49,11 +49,12 @@ API endpoint for deleting a Note by it's id:
 ********************************************************
 For building and running the Docker container:
 
+Make sure docker is installed in your local machine before running the below command.
 
 Run this command in the terminal:
 
 ```bash
-docker compose up
+sudo docker compose up
 ```
 
 The server will start running and can be accessed through http://localhost:5001 (as in docker container PORT 5000 is mapped to 5001) and get connected to mongoDB database.
