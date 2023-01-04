@@ -69,10 +69,5 @@ const updateNote = asyncHandler(async (req, res) => {
 }
 );
 
-const health = asyncHandler(async (req, res) => {
-    res.status(200).json({ messgae: "Note Not Found" })
-}
-);
-
 export { getNoteById, getNotes, createNote, deleteNote, updateNote, health };
 

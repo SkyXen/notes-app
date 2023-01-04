@@ -5,9 +5,7 @@ import {
   createNote,
   deleteNote,
   updateNote,
-  health,
 } from "../controllers/noteController.js";
-
 
 const router = express.Router();
 
@@ -23,6 +21,5 @@ router.route("/:id")
   .delete(deleteNote)
   .put(updateNote);
 
-router.route("/health").get(health);
 
 export default router;
