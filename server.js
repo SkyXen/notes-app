@@ -29,7 +29,6 @@ app.use(express.json()); // to accept json data
 
 app.get("/health", (req, res) => {
   res.status(200).send({ message: "successful" });
-  
 });
 
 /** SUCCESS MESSAGE IF SERVER IS RUNNING */
