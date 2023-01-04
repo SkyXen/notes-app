@@ -69,5 +69,5 @@ const updateNote = asyncHandler(async (req, res) => {
 }
 );
 
-export { getNoteById, getNotes, createNote, deleteNote, updateNote, health };
+export { getNoteById, getNotes, createNote, deleteNote, updateNote };
 
