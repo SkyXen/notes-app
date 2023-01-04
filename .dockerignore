@@ -2,3 +2,5 @@
 Dockerfile
 .dockerignore
 docker-compose.yml
+Readme.md
+documentation.txt

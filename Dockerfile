@@ -1,13 +1,16 @@
-FROM node:alpine
+FROM node:lts-buster-slim
 
-WORKDIR /app
+WORKDIR /usr/src/app
 
-COPY package*.json /app/
+COPY package*.json ./
 
 RUN npm ci
 
 COPY . .
 
-HEALTHCHECK --interval=5s --timeout=10s --retries=3 CMD curl --silent --fail http://localhost/health || exit 1
+EXPOSE 5000
 
-CMD ["npm","run", "dev"]
+CMD [ "npm", "run", "dev" ]
+
+HEALTHCHECK CMD curl --fail http://localhost:5000 || exit 1  
+ 
