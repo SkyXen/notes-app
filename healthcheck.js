@@ -1,13 +1,16 @@
-const http = require('http');
+const http = require('https');
+
 const options = {
-    host: '0.0.0.0',
+    host: process.env.FRONTEND_DOMAIN,
     port: 3000,
+    path: '/',
+    method: 'GET',
     timeout: 2000
 };
 
-const healthCheck = http.request(options, (res) => {
-    console.log(`HEALTHCHECK STATUS: ${res.statusCode}`);
-    if (res.statusCode == 200) {
+const healthCheck = http.request(options, (response) => {
+    console.log(`STATUS: ${response.statusCode}`);
+    if (response.statusCode === 200) {
         process.exit(0);
     }
     else {
@@ -15,8 +18,8 @@ const healthCheck = http.request(options, (res) => {
     }
 });
 
-healthCheck.on('error', function (err) {
-    console.error('ERROR');
+healthCheck.on('error', function (error) {
+    console.error('ERROR', error);
     process.exit(1);
 });
 

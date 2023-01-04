@@ -11,7 +11,8 @@ COPY . .
 EXPOSE 3000
 
 HEALTHCHECK --interval=30s --timeout=30s \
-  CMD curl -f http://localhost:3000/health || exit 1
+  CMD /healthcheck.js
 
 CMD [ "npm", "run", "dev" ]
+ 
  
