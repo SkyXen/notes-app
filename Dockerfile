@@ -8,6 +8,8 @@ RUN npm ci
 
 COPY . .
 
+RUN apk add curl
+
 EXPOSE 3000
 
 HEALTHCHECK --interval=5s --timeout=10s \
