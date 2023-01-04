@@ -1,6 +1,6 @@
 async function makeRequest() {
   try {
-    const response = await fetch('http://localhost:3000/notes/health');
+    const response = await fetch('http://localhost:3000/health');
 
     console.log('status code: ', response.status); 
 
