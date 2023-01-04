@@ -1,26 +1,18 @@
-const http = require('https');
+async function makeRequest() {
+  try {
+    const response = await fetch('http://localhost:3000/health');
 
-const options = {
-    host: process.env.FRONTEND_DOMAIN,
-    port: 3000,
-    path: '/',
-    method: 'GET',
-    timeout: 2000
-};
+    console.log('status code: ', response.status); // 👉️ 200
 
-const healthCheck = http.request(options, (response) => {
-    console.log(`STATUS: ${response.statusCode}`);
-    if (response.statusCode === 200) {
+    if (response.ok) {
+        console.log(response);
         process.exit(0);
-    }
-    else {
+    } else {
         process.exit(1);
     }
-});
+  } catch (err) {
+    console.log(err);
+  }
+}
 
-healthCheck.on('error', function (error) {
-    console.error('ERROR', error);
-    process.exit(1);
-});
-
-healthCheck.end();
+makeRequest();
