@@ -1,6 +1,6 @@
 FROM node:alpine
 
-WORKDIR /usr/src/app
+WORKDIR /app
 
 COPY package*.json ./
 
@@ -10,8 +10,8 @@ COPY . .
 
 EXPOSE 3000
 
-HEALTHCHECK --interval=12s --timeout=12s --start-period=30s \  
-    CMD node /healthcheck.js
+HEALTHCHECK --interval=30s --timeout=30s \
+  CMD curl -f http://localhost:3000/health || exit 1
 
 CMD [ "npm", "run", "dev" ]
  
