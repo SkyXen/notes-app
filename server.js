@@ -27,11 +27,6 @@ const app = express();
 
 app.use(express.json()); // to accept json data
 
-app.get("/health", (req, res) => {
-  res.status(200).send({ message: "successful" });
-  process.exit(0);
-});
-
 /** SUCCESS MESSAGE IF SERVER IS RUNNING */
 app.get("/", (req, res) => {
   res.send("API is up and running...Thanks Akash for building me up :)");

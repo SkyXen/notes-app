@@ -10,8 +10,8 @@ COPY . .
 
 EXPOSE 3000
 
-HEALTHCHECK --interval=30s --timeout=30s \
-  CMD curl -f http://localhost:3000/notes || exit 1
+HEALTHCHECK --interval=5s --timeout=10s \
+  CMD curl -f http://localhost:3000/notes/health || exit 1
 
 CMD [ "npm", "run", "dev" ]
  

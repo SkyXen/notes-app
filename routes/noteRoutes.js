@@ -5,6 +5,7 @@ import {
   createNote,
   deleteNote,
   updateNote,
+  health,
 } from "../controllers/noteController.js";
 
 
@@ -21,5 +22,7 @@ router.route("/:id")
   .get(getNoteById)
   .delete(deleteNote)
   .put(updateNote);
+
+router.route("/health").get(health);
 
 export default router;
