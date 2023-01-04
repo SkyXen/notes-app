@@ -1,4 +1,4 @@
-FROM node:lts-buster-slim
+FROM node:alpine
 
 WORKDIR /usr/src/app
 
@@ -8,9 +8,10 @@ RUN npm ci
 
 COPY . .
 
-EXPOSE 5000
+EXPOSE 3000
+
+HEALTHCHECK --interval=12s --timeout=12s --start-period=30s \  
+    CMD node healthcheck.js
 
 CMD [ "npm", "run", "dev" ]
-
-HEALTHCHECK CMD curl --fail http://localhost:5000 || exit 1  
  
